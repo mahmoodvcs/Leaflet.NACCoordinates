@@ -1,54 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Leaflet.NACCoordinates : NAC Coordinate control for LeafletJS">
+    <title>Leaflet.NACCoordinates by mahmoodvcs</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Leaflet.NACCoordinates</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">Leaflet.NACCoordinates</h1>
-          <h2 id="project_tagline">NAC Coordinate control for LeafletJS</h2>
+      <section>
+        <div id="title">
+          <h1>Leaflet.NACCoordinates</h1>
+          <p>NAC Coordinate control for LeafletJS</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/mahmoodvcs">mahmoodvcs</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/mahmoodvcs/Leaflet.NACCoordinates/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <h1>
 <a id="leafletnaccoordinates" class="anchor" href="#leafletnaccoordinates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Leaflet.NACCoordinates</h1>
 
-<p>NAC Coordinate control for LeafletJS</p>
+<p>NAC Coordinate control for <a href="leafletjs.com">LeafletJS</a></p>
 
-<p>A <a href="https://github.com/Leaflet/Leaflet">Leaflet</a> plugin to view mouse <a href="http://www.nacgeo.com/">NAC</a> coordinates.
-In next release, the user can change the coordinates and get a marker on that position.</p>
+<p>A <a href="https://github.com/Leaflet/Leaflet">Leaflet</a> plugin to view <a href="http://www.nacgeo.com/">NAC address</a> of the mouse pointer on mouse move.</p>
+
+<p>In next release, the user can enter a NAC address and get a marker on that position.</p>
+
+<p><a href="http://mahmoodvcs.github.io/Leaflet.NACCoordinates/example/demo.html">Live Demo</a></p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-javascript"><pre>L.control.coordinates({
+    position<span class="pl-k">:</span><span class="pl-s1"><span class="pl-pds">"</span>bottomleft<span class="pl-pds">"</span></span>, <span class="pl-c">//optional default "bootomright"</span>
+    labelTemplate<span class="pl-k">:</span><span class="pl-s1"><span class="pl-pds">"</span>NAC Address: {0}<span class="pl-pds">"</span></span>, <span class="pl-c">//optional default "NAC: {0}"</span>
+    enableUserInput<span class="pl-k">:</span><span class="pl-c1">true</span>, <span class="pl-c">//optional default false (not implemented in this release)</span>
+}).addTo(map);</pre></div>
+
+<h3>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h3>
+
+<p>Distributed under <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License v2</a></p>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Leaflet.NACCoordinates maintained by <a href="https://github.com/mahmoodvcs">mahmoodvcs</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -59,7 +76,6 @@ In next release, the user can change the coordinates and get a marker on that po
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
