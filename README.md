@@ -1,5 +1,5 @@
 # Leaflet.NACCoordinates
-NAC Coordinate control for [LeafletJS](leafletjs.com)
+NAC Coordinate control for [LeafletJS](http://leafletjs.com)
 
 A [Leaflet](https://github.com/Leaflet/Leaflet) plugin to view [NAC address](http://www.nacgeo.com/) of the mouse pointer on mouse move.
 
