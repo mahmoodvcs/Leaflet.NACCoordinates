@@ -10,7 +10,7 @@ In next release, the user can enter a NAC address and get a marker on that posit
 ### Usage
 
 ```javascript
-L.control.coordinates({
+L.control.NACCoordinates({
 	position:"bottomleft", //optional default "bootomright"
 	labelTemplate:"NAC Address: {0}", //optional default "NAC: {0}"
 	enableUserInput:true, //optional default false (not implemented in this release)
